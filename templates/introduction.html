@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>Introduction - Osteoporosis Prediction</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <style>
+        body {
+            transform: scale(0.5);
+            transform-origin: top left;
+            width: 200%; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Osteoporosis Prediction</a>
+        <nav id="nav-menu">
+            <a href="/">Home</a>
+            <a href="/introduction" class="active">Introduction</a>
+            <a href="/prediction">Prediction</a>
+        </nav>
+        <button class="menu-button">
+            <i class="fas fa-bars"></i>
+        </button>
+    </header>
+
+    <section id="Introduction" class="container">
+        <h1 class="Introduction-heading">Introduction</h1>
+        <div class="Introduction-grid">
+            <div class="Introduction">
+                <h2 class="Introduction-text">บทความนี้ได้เสนอกระบวนการอัลกอริธึมใหม่ในการแก้ปัญหาจุดคงที่สำหรับการแมปกิ้งที่เกือบไม่ขยาย (quasi-nonexpansive mappings) 
+                    และปัญหาการรวมตัวของตัวแปร (variational inclusion problems) ภายในพื้นที่ Hilbert ที่เป็นจริง วิธีการที่เสนอนี้แสดงให้เห็นถึงการรวมตัวแบบอ่อนภายใต้สมมติฐานที่เหมาะสม 
+                    นอกจากนี้เรายังได้นำอัลกอริธึมนี้ไปใช้ในการจัดประเภทข้อมูลเพื่อทำนายความเสี่ยงของโรคกระดูกพรุน โดยใช้เครื่องเรียนรู้แบบสุดขั้ว (Extreme Learning Machine) จากผลการทดลอง 
+                    อัลกอริธึมที่เราเสนอนั้นสามารถทำได้ดีกว่าอัลกอริธึมที่มีอยู่เดิมในหลายมาตรวัดการประเมิน โดยเฉพาะอย่างยิ่งมันทำให้ได้ค่าความถูกต้อง (accuracy), ความแม่นยำ (precision), 
+                    และ F1-score ที่สูงขึ้นในหลายๆ กล่องการฝึกฝนเมื่อเทียบกับวิธีการอื่นๆ ค่าพื้นที่ใต้โค้ง (AUC) จากกราฟเส้นโค้งการทำงานของผู้รับ (ROC curve) ยังยืนยันถึงความมีประสิทธิภาพของวิธีการของเรา 
+                    ซึ่งแสดงให้เห็นถึงการทั่วไปและประสิทธิภาพในการจำแนกประเภทที่เหนือกว่า ผลลัพธ์เหล่านี้เน้นย้ำถึงประสิทธิภาพและความทนทานของอัลกอริธึมที่เราเสนอนี้ 
+                    ซึ่งแสดงให้เห็นถึงศักยภาพในการพัฒนารูปแบบการทำนายความเสี่ยงของโรคกระดูกพรุนผ่านการปรับปรุงการรวมตัวและความสามารถในการจำแนกประเภท.</h2>
+                <h2>Old Algorithm</h2>
+                <div class="Introduction">
+                    <a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/KYvH05qM/Screenshot-2025-03-09-150443.png" 
+                        \alt="Screenshot-2025-03-09-150443" border="0"></a>
+                        <a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/qRWDMHks/Screenshot-2025-03-09-150501.png" 
+                            alt="Screenshot-2025-03-09-150501" border="0"></a>
+                            <a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/VLQZxwZ1/Screenshot-2025-03-09-150509.png" 
+                                alt="Screenshot-2025-03-09-150509" border="0"></a>
+                                <h2>New Algorithm</h2>
+                                
+                </div>
+                <a href="https://postimages.org/" target="_blank"><img src="https://i.postimg.cc/3NpSkfRP/Screenshot-2025-03-09-150536.png" 
+                    alt="Screenshot-2025-03-09-150536" border="0"></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="application-osteoporosis" class="Application to Osteoporosis Risk Prediction">
+        <h1>Application to Osteoporosis Risk Prediction</h1>
+        
+        <div class="application-osteoporosis">
+            <div class="text-application-osteoporosis">
+                <h2>ความสำคัญของโรคกระดูกพรุน</h2>
+                <ul>
+                    <li class="Introduction-text">โรคกระดูกพรุนเป็นปัญหาสุขภาพระดับโลก โดยเฉพาะในผู้สูงอายุ</li>
+                    <li  class="Introduction-text">ทำให้กระดูกอ่อนแอและเพิ่มความเสี่ยงต่อการแตกหัก</li>
+                    <li  class="Introduction-text">ส่งผลให้เกิดภาวะแทรกซ้อน การสูญเสียการเคลื่อนไหว และอัตราการเสียชีวิตที่สูงขึ้น</li>
+                </ul>
+                
+                <h2>บทบาทของ Machine Learning ในการวิเคราะห์โรคกระดูกพรุน</h2>
+                <ul>
+                    <li  class="Introduction-text">Machine Learning (ML) สามารถวิเคราะห์ข้อมูลประชากร ไลฟ์สไตล์ พันธุกรรม และความหนาแน่นของกระดูก</li>
+                    <li  class="Introduction-text">ช่วยระบุบุคคลที่มีความเสี่ยงสูงได้ตั้งแต่ระยะเริ่มต้น</li>
+                    <li  class="Introduction-text">ทำให้สามารถเข้าแทรกแซงและป้องกันภาวะแทรกซ้อนจากโรคกระดูกพรุนได้</li>
+                </ul>
+                
+                <h2>การพัฒนาอัลกอริธึมใหม่เพื่อเพิ่มประสิทธิภาพการทำนาย</h2>
+                <ul>
+                    <li  class="Introduction-text">ใช้อัลกอริธึมที่พัฒนาขึ้นใหม่เป็นตัวปรับค่าประสิทธิภาพ (Optimizer) ให้กับ Extreme Learning Machine (ELM)</li>
+                    <li  class="Introduction-text">ใช้ชุดข้อมูลจาก Kaggle ที่ครอบคลุมข้อมูลประชากร ไลฟ์สไตล์ และประวัติทางการแพทย์</li>
+                    <li  class="Introduction-text">เพิ่มความแม่นยำในการวิเคราะห์และคาดการณ์ความเสี่ยงของโรคกระดูกพรุน</li>
+                </ul>
+                
+                <h2>ปัจจัยเสี่ยงที่เกี่ยวข้องกับโรคกระดูกพรุน</h2>
+                <ul>
+                    <li  class="Introduction-text"><strong>อายุ:</strong> กระดูกเสื่อมตามธรรมชาติเมื่ออายุมากขึ้น</li>
+                    <li  class="Introduction-text"><strong>การเปลี่ยนแปลงของฮอร์โมน:</strong> เช่น วัยหมดประจำเดือนที่ลดระดับฮอร์โมนเอสโตรเจน</li>
+                    <li  class="Introduction-text"><strong>ภาวะขาดสารอาหาร:</strong> โดยเฉพาะแคลเซียมและวิตามินดี</li>
+                    <li  class="Introduction-text"><strong>พฤติกรรมการดำเนินชีวิต:</strong> เช่น การไม่ออกกำลังกายหรือรับประทานอาหารที่ไม่มีประโยชน์</li>
+                </ul>
+                
+                <h2>การตรวจวินิจฉัยและแนวทางการป้องกัน</h2>
+                <ul>
+                    <li>ตรวจวินิจฉัยด้วยเครื่อง <strong>DEXA Scan</strong> เพื่อวัดค่าความหนาแน่นของมวลกระดูก (T-score < -2.5 แสดงว่าเป็นโรคกระดูกพรุน)</li>
+                    <li>การออกกำลังกาย รับประทานอาหารที่มีแคลเซียมและวิตามินดี และปรับเปลี่ยนพฤติกรรมช่วยลดความเสี่ยง</li>
+                </ul>
+                
+                <h2>ประโยชน์ของการใช้ Machine Learning ในการจัดการโรคกระดูกพรุน</h2>
+                <ul>
+                    <li>สามารถทำนายความเสี่ยงได้เร็วขึ้น</li>
+                    <li>ช่วยให้แพทย์และบุคลากรทางการแพทย์วางแผนการรักษาที่เหมาะสม</li>
+                    <li>เพิ่มโอกาสในการป้องกันและลดภาระของระบบสาธารณสุข</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="Process" class="Process">
+        <h1>Process</h1>
+        <ul>
+
+            <h2>ตัวอย่างชุดข้อมูล</h2>
+            <div class="Process5">
+                <img src='https://i.postimg.cc/wB0fgD5S/Screenshot-2025-03-10-200432.png' alt='Osteoporosis Prediction' class="styled-image5">
+            </div>
+            <h2></h2>
+                <li class="Introduction-text">ตัวแปรเหล่านี้เกี่ยวข้องกับปัจจัยที่อาจส่งผลต่อภาวะโรคกระดูกพรุน 
+                    เช่น อายุ เพศ การเปลี่ยนแปลงของฮอร์โมน 
+                    ประวัติครอบครัว น้ำหนักตัว การบริโภคแคลเซียม 
+                    การออกกำลังกาย การสูบบุหรี่ และประวัติการกระดูกหักเป็นต้นส่วนล่างของตารางระบุว่าชุดข้อมูลนี้มี 979 ตัวอย่างที่เป็นโรคกระดูกพรุน และ 979 ตัวอย่างที่ไม่เป็นโรคกระดูกพรุน 
+                    ซึ่งแสดงให้เห็นว่าสมดุลของข้อมูลมีความเท่าเทียมกันระหว่างสองกลุ่ม.</li>
+            
+
+            <h2>ภาพจากระยะกระดูกพรุน</h2>
+            <div class="Process1">
+                <img src='https://i.postimg.cc/8PShqNLh/Screenshot-2025-03-10-032016.png' alt='Osteoporosis Prediction' class="styled-image1">
+            </div>
+            <h2></h2>
+                <li class="Introduction-text">กระดูกปกติ (Normal bone): มีค่า T-score -1 หรือสูงกว่า แสดงถึงความหนาแน่นของกระดูกที่แข็งแรง</li>
+                <li class="Introduction-text"> กระดูกบาง (Osteopenia): แสดงถึงการสูญเสียมวลกระดูกเล็กน้อย มีค่า T-score อยู่ระหว่าง -1 ถึง -2.5 แสดงถึงภาวะความหนาแน่นของกระดูกต่ำกว่าปกติ</li>
+                <li class="Introduction-text">กระดูกพรุน (Osteoporosis): มีลักษณะการสูญเสียมวลกระดูกอย่างมากและมีความพรุนเพิ่มขึ้น มีค่า T-score -2.5 หรือต่ำกว่า แสดงถึงความเสี่ยงที่สูงขึ้นต่อการเกิดกระดูกหัก</li>
+        </ul>
+        <ul>
+            <h2>ประเมินประสิทธิภาพของอัลกอริทึมการจำแนกประเภทโดยใช้ 4 EvaluationMetrics</h2>
+                <div class="container1">
+                    <ul class="text-list1">
+                        <li>Accuracy</li>
+                        <li>Precision</li>
+                        <li>Recall</li>
+                        <li>F1-score</li>
+
+                    </ul>
+                    <img src="https://i.postimg.cc/PJqCy4Yf/Screenshot-2025-03-10-135103.png" 
+         alt="Osteoporosis Prediction" class="styled-image">
+         <div class="container1">
+            <ul class="text-list1">
+                <li>TP (True Positives) หมายถึง ผลลัพธ์ที่ถูกต้องและเป็นบวก (เช่น การทำนายว่ามีโรค และมีโรคจริง)</li>
+                <li>TN (True Negatives) หมายถึง ผลลัพธ์ที่ถูกต้องและเป็นลบ (เช่น การทำนายว่าไม่มีโรค และไม่มีโรคจริง)</li>
+                <li>FP (False Positives) หมายถึง ผลลัพธ์ที่ผิดพลาดและเป็นบวก (เช่น การทำนายว่ามีโรค แต่ไม่มีโรคจริง)</li>
+                <li>FN (False Negatives) หมายถึง ผลลัพธ์ที่ผิดพลาดและเป็นลบ (เช่น การทำนายว่าไม่มีโรค แต่มีโรคจริง)</li>
+                </div>
+            </ul>
+                <ul>
+                    <h2>ภาพประกอบแสดงการทำงานของเทคนิคการตรวจสอบความถูกต้องแบบไขว้ 5 เท่า</h2>
+                    <div class="Process3">
+                        <img src='https://i.postimg.cc/MG5t4Sdm/Screenshot-2025-03-10-154512.png' alt='Osteoporosis Prediction' class="styled-image1">
+                    </div>
+                    <h2>คำอธิบาย</h2>
+                    <ul class="text-list2">
+                    <p>ภาพประกอบแสดงการทำงานของเทคนิคการตรวจสอบความถูกต้องแบบไขว้ 5 เท่า ซึ่งเป็นวิธีที่ใช้ในการประเมินประสิทธิภาพของโมเดลการเรียนรู้ของเครื่อง (machine learning) โดยแบ่งข้อมูลออกเป็น 5 ส่วนเท่าๆ กัน (folds)</p>
+                    <h2></h2>
+                    <h4>แต่ละ Fold:</h4>
+                        <li class="Introduction-text">ในแต่ละรอบ (fold) จะมีการแบ่งข้อมูลออกเป็นสองส่วน</li>
+                        <li class="Introduction-text"> ข้อมูลฝึกฝน (Training Data): 80% ของข้อมูลทั้งหมด (แสดงด้วยสีม่วง) จะถูกใช้เพื่อฝึกฝนโมเดล</li>
+                        <li class="Introduction-text">ข้อมูลตรวจสอบ (Validation Data): 20% ของข้อมูลทั้งหมด (แสดงด้วยสีเขียว) จะถูกใช้เพื่อตรวจสอบประสิทธิภาพของโมเดลที่ได้รับการฝึกฝน</li>
+                        <li class="Introduction-text">แต่ละ fold จะใช้ส่วนย่อยของข้อมูลที่แตกต่างกันสำหรับการตรวจสอบ เพื่อให้แน่ใจว่าข้อมูลทั้งหมดถูกใช้สำหรับการตรวจสอบอย่างน้อยหนึ่งครั้ง</li>
+                        
+                        <h2></h2>
+                        <h4>การทำงาน:</h4>
+                        <li class="Introduction-text">กระบวนการนี้จะทำซ้ำ 5 ครั้ง โดยแต่ละครั้งจะใช้ fold ที่แตกต่างกันเป็นข้อมูลตรวจสอบ และใช้ fold ที่เหลือเป็นข้อมูลฝึกฝน</li>
+                        <li class="Introduction-text"> ผลลัพธ์จากแต่ละ fold จะถูกนำมาเฉลี่ยเพื่อประเมินประสิทธิภาพโดยรวมของโมเดล</li>
+                        
+                        <h2></h2>
+                        <h4>ประโยชน์:</h4>
+                        <li class="Introduction-text">การตรวจสอบความถูกต้องแบบไขว้ 5 เท่า ช่วยลดปัญหาการ "overfitting" (การที่โมเดลเรียนรู้ข้อมูลฝึกฝนมากเกินไปจนไม่สามารถทำงานได้ดีกับข้อมูลใหม่)</li>
+                        <li class="Introduction-text">ช่วยให้ได้การประเมินประสิทธิภาพของโมเดลที่น่าเชื่อถือมากขึ้น โดยการใช้ข้อมูลทั้งหมดในการตรวจสอบ</li>
+                </ul>
+    </section>
+
+    <section id="Accuracy-Algorithms" class="Accuracy-Algorithms">
+        <h1>Accuracy-Algorithms</h1>
+        <h2> Settings-for-Algorithms</h2>
+        <div class="Accuracy-Algorithms">
+            <img src="https://i.postimg.cc/rpX08KFN/Screenshot-2025-03-10-181455.png" 
+                 alt="Osteoporosis Prediction" class="styled-image4">
+                 <h2></h2>
+            <ul>
+                <li class="Introduction-text">
+                    การตั้งค่าพารามิเตอร์สำหรับอัลกอริทึม 1–4 พารามิเตอร์รวมถึง 1, n, และ n ซึ่งแสดงถึงขนาดก้าว, 
+                    อัตราการเรียนรู้, ปัจจัยการปรับ, และเทอมเพิ่มเติมที่เกี่ยวข้องกับกระบวนการวนซ้ำ
+                </li>
+                <h2>Algorithm-Training Box 1</h2>
+                <img src="https://i.postimg.cc/0NY6rPzR/Screenshot-2025-03-10-181504.png" 
+                alt="Osteoporosis Prediction" class="styled-image4">
+                <h2></h2>
+                <li class="Introduction-text">
+                    การเปรียบเทียบประสิทธิภาพของอัลกอริทึม 1-4 บนชุดข้อมูลตรวจสอบจากกล่องฝึกฝน 1 (Training Box 1) 
+                    ผลลัพธ์เหล่านี้อิงจากการประเมินโมเดลโดยใช้ fold แรกของแผนการตรวจสอบความถูกต้องแบบไขว้ 5 เท่า (5-fold cross-validation scheme) 
+                    โดยที่กล่องฝึกฝน 1 ทำหน้าที่เป็นชุดข้อมูลตรวจสอบ
+                </li>
+                
+                <h2>Algorithm-Training Box 2</h2>
+                <img src="https://i.postimg.cc/1Xt4WFJs/Screenshot-2025-03-10-181515.png" 
+                alt="Osteoporosis Prediction" class="styled-image4">
+                <h2></h2>
+                <li class="Introduction-text">"การเปรียบเทียบประสิทธิภาพของอัลกอริทึม 1-4 บนชุดข้อมูลตรวจสอบจากกล่องฝึกฝน 2 (Training Box 2)
+                    โดยอิงจาก fold ที่สองของแผนการตรวจสอบความถูกต้องแบบไขว้ 5 เท่า (5-fold cross-validation scheme)"
+                </li>
+
+                <h2>Algorithm-Training Box 3</h2>
+                <img src="https://i.postimg.cc/wvF7c25w/Screenshot-2025-03-10-181525.png" 
+                alt="Osteoporosis Prediction" class="styled-image4">
+                <h2></h2>
+                <li class="Introduction-text">"การเปรียบเทียบประสิทธิภาพของอัลกอริทึม 1-4 บนชุดข้อมูลตรวจสอบจากกล่องฝึกฝน 3 (Training Box 3) โดยอิงจาก fold 
+                    ที่สามของแผนการตรวจสอบความถูกต้องแบบไขว้ 5 เท่า (5-fold cross-validation scheme)"
+                </li>
+                
+                <h2>Algorithm-Training Box 4</h2>
+                <img src="https://i.postimg.cc/nznXDgms/Screenshot-2025-03-10-181545.png"
+                alt="Osteoporosis Prediction" class="styled-image4">
+                <h2></h2>
+                <li class="Introduction-text">"การเปรียบเทียบประสิทธิภาพของอัลกอริทึม 1-4 บนชุดข้อมูลตรวจสอบจากกล่องฝึกฝน 4 (Training Box 4)
+                    โดยอิงจาก fold ที่สองของแผนการตรวจสอบความถูกต้องแบบไขว้ 5 เท่า (5-fold cross-validation scheme)"
+                </li>
+
+                <h2>Algorithm-Training Box 5</h2>
+                <img src="https://i.postimg.cc/3NcNzwcp/Screenshot-2025-03-10-181550.png"
+                alt="Osteoporosis Prediction" class="styled-image4">
+                <h2></h2>
+                <li class="Introduction-text">"การเปรียบเทียบประสิทธิภาพของอัลกอริทึม 1-4 บนชุดข้อมูลตรวจสอบจากกล่องฝึกฝน 5 (Training Box 5)
+                    โดยอิงจาก fold ที่สองของแผนการตรวจสอบความถูกต้องแบบไขว้ 5 เท่า (5-fold cross-validation scheme)"
+                </li>
+
+                <h2>Algorithm-Training Box 6</h2>
+                <img src="https://i.postimg.cc/15BKsnT1/Screenshot-2025-03-10-194444.png" 
+                alt="Osteoporosis Prediction" class="styled-image4">
+                <h2></h2>
+                <li class="Introduction-text">"การเปรียบเทียบประสิทธิภาพของอัลกอริทึม 1-4 บนชุดข้อมูลตรวจสอบจากกล่องฝึกฝน 6 (Training Box 6)
+                    โดยอิงจาก fold ที่สองของแผนการตรวจสอบความถูกต้องแบบไขว้ 5 เท่า (5-fold cross-validation scheme)"
+                </li>
+
+                <h2>Algorithm-Training Box 7</h2>
+                <img src="https://i.postimg.cc/GmSJs0dM/Screenshot-2025-03-10-194448.png" 
+                alt="Osteoporosis Prediction" class="styled-image4">
+                <h2></h2>
+                <li class="Introduction-text">"การเปรียบเทียบประสิทธิภาพของอัลกอริทึม 1-4 บนชุดข้อมูลตรวจสอบจากกล่องฝึกฝน 7 (Training Box 7)
+                    โดยอิงจาก fold ที่สองของแผนการตรวจสอบความถูกต้องแบบไขว้ 5 เท่า (5-fold cross-validation scheme)"
+                </li>
+                <h2>จากตารางที่ 3–7 ผลการดำเนินงานของอัลกอริทึม 1–4 ได้รับการประเมินโดยใช้รูปแบบการตรวจสอบความถูกต้องแบบไขว้ 5 เท่า โดยแต่ละกล่องฝึกอบรมทำหน้าที่เป็นชุดตรวจสอบความถูกต้องตามลำดับ</h2>
+                     <h2></h2>
+                    <li class="Introduction-text">(i) กล่องฝึกอบรม 1: อัลกอริทึม 4 มีความแม่นยำสูงสุด (82.05%) ด้วยความแม่นยำที่โดดเด่น (91.79%) และคะแนน F1 (83.64%)</li>
+                    <h2></h2>
+                    <li class="Introduction-text">(ii) กล่องฝึกอบรม 2: อัลกอริทึม 3 และ 4 มีความแม่นยำสูงสุดเท่ากัน (85.93%) โดยอัลกอริทึม 4 แสดงเวลา CPU และการเรียกคืน (81.61%) ที่ดีกว่าเล็กน้อย</li>
+                    <h2></h2>
+                    <li class="Introduction-text">(iii) กล่องฝึกอบรม 3: อัลกอริทึม 4 ทำงานได้ดีที่สุดอีกครั้ง โดยมีความแม่นยำ 84.40% และความแม่นยำสูง (90.81%)</li>
+                    <h2></h2>
+                    <li class="Introduction-text">(iv) กล่องฝึกอบรม 4: อัลกอริทึม 4 มีความแม่นยำ (82.35%) และความแม่นยำ (93.36%) ที่ดีที่สุด</li>
+                    <h2></h2>
+                    <li class="Introduction-text">(v) กล่องฝึกอบรม 5: อัลกอริทึม 4 มีความแม่นยำสูงสุดเท่ากัน (85.32%) และแสดงความแม่นยำที่ดีที่สุด (94.89%) และจำนวนการวนซ้ำที่ดีกว่าเล็กน้อย</li>
+                    <h2></h2>
+                    <li class="Introduction-text"> โดยทั่วไป อัลกอริทึม 4 แสดงให้เห็นถึงประสิทธิภาพที่ดีอย่างสม่ำเสมอในด้านความแม่นยำ ความแม่นยำ และคะแนน F1 ในกล่องฝึกอบรมส่วนใหญ่"</li>
+                </ul>
+    </section>
+
+    <section id="Conclusions" class="Conclusions ">
+        <h1 class="Conclusions">Conclusions</h1>
+        <div class="Conclusions">
+            <div class="Conclusions">
+                <h2 class="Introduction-text">ราได้เสนออัลกอริทึมใหม่ (อัลกอริทึม 4) 
+                    เพื่อแก้ปัญหาการรวมตัวแปรและปัญหาจุดตรึงที่เกี่ยวข้องกับการแปลงแบบกึ่งไม่ขยายในปริภูมิฮิลเบิร์ตจริง 
+                    ทฤษฎีบทหลักของเราสร้างการลู่เข้าอย่างอ่อนของอัลกอริทึมที่เสนอภายใต้เงื่อนไขบางประการ นอกจากนี้ 
+                    เรายังได้ประยุกต์ใช้อัลกอริทึมร่วมกับเครื่องเรียนรู้สุดขีดกับปัญหาการจำแนกข้อมูล โดยเฉพาะอย่างยิ่งเพื่อทำนายความเสี่ยงโรคกระดูกพรุน 
+                    อัลกอริทึมของเราบรรลุความแม่นยำมากกว่า 82%, ความแม่นยำมากกว่า 91%, การเรียกคืน 76% และคะแนน F1 มากกว่า 83% ในทุกกล่องฝึกอบรม 
+                    ซึ่งแสดงให้เห็นถึงประสิทธิภาพของอัลกอริทึมที่เราพัฒนาขึ้น</h2>
+            </div>
+        </div>
+    </section>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
